@@ -1,7 +1,7 @@
 const cors = require('cors');
 const express = require('express');
 const router = express.Router();
-const dataSchema = require('./dataschema');
+const dataSchema = require('./dataSchema');
 const mongoose = require('mongoose');
 
 router.post("/",(req,res,next)=>{
