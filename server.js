@@ -8,7 +8,7 @@ app.use(cors());
 const data = require('./data')
 const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
-mongoose.connect('mongodb+srv://MajorProject:ASVSA@cluster0.qp4h0vr.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect('---Connection String---');
 
 mongoose.connection.on('error',err=>{
     console.log('Connection failed');
@@ -26,7 +26,7 @@ app.use("/",data);
 
 
 app.listen(port, () => {
-    console.log("3001");
+    console.log(port);
 })
 
 

@@ -9,6 +9,7 @@ router.get("/",(req,res)=>{
     res.send({status:"Running"})
 })
 
+//Insering Records
 // router.post("/",(req,res,next)=>{
 //     const data = new college({
 //     _id:new mongoose.Types.ObjectId,
