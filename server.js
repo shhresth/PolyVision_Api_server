@@ -8,7 +8,7 @@ app.use(cors());
 const data = require('./data')
 const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
-mongoose.connect('---Connection String---');
+mongoose.connect('mongodb+srv://Api_fetch_acc:ASVSA%403581@cluster0.qp4h0vr.mongodb.net/?retryWrites=true&w=majority');
 
 mongoose.connection.on('error',err=>{
     console.log('Connection failed');
